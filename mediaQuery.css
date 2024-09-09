@@ -1,7 +1,8 @@
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1330px) {
     .responsive-margin {
-        margin: 0 1rem;
+        margin-inline: 1rem;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -17,6 +18,10 @@
         display: block;
     }
 
+    .main-content {
+        margin-top: 2rem;
+    }
+
     .hero-section {
         flex-direction: column;
     }
@@ -29,7 +34,13 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .features-cards {
-        grid-template-columns: repeat(1, 1fr);
+    .newsletter-content .news-left-img {
+        width: 100%;
     }
+
+    .news-right {
+        width: 100%;
+    }
+
+
 }

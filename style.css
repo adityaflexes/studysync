@@ -31,7 +31,6 @@ body {
 
 .header-content {
     max-width: 1280px;
-    min-width: 320px;
     margin: 0 auto;
     padding-top: 2rem;
     display: flex;
@@ -85,7 +84,7 @@ nav .nav-link:hover {
     padding: .8rem 1.6rem;
     font-size: 1rem;
     font-weight: 500;
-    border-radius: .4rem;
+    border-radius: .5rem;
     background: var(--accent-color);
 }
 
@@ -94,7 +93,7 @@ nav .nav-link:hover {
 }
 
 /* content  */
-.content {
+.main-content {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -164,11 +163,11 @@ nav .nav-link:hover {
     padding: .8rem 1.6rem;
     font-size: 1rem;
     font-weight: 500;
-    border-radius: .4rem;
+    border-radius: .5rem;
     background: var(--accent-color);
 }
 
-.left-content .start-btn:hover {
+.left-content .start-btn:active {
     background-color: var(--primary-color);
 }
 
@@ -177,18 +176,18 @@ nav .nav-link:hover {
     padding: .8rem 1.6rem;
     font-size: 1rem;
     font-weight: 500;
-    border-radius: .4rem;
+    border-radius: .5rem;
     background: var(--dark-grey);
 }
 
-.left-content .tour-btn:hover {
+.left-content .tour-btn:active {
     background-color: var(--grey);
     color: var(--text-color);
 }
 
 .right-content .right-content-img {
     width: 100%;
-    border-radius: .4rem;
+    border-radius: .5rem;
     box-shadow: 1px 3px 10px #ddd;
     animation: slideIn 1s;
 }
@@ -212,7 +211,7 @@ nav .nav-link:hover {
     gap: 2rem;
     background: var(--grey);
     padding: 1rem;
-    border-radius: .4rem;
+    border-radius: .5rem;
 }
 
 .companies .company-logo {
@@ -243,7 +242,7 @@ nav .nav-link:hover {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .features-info {
@@ -263,7 +262,7 @@ nav .nav-link:hover {
 
 .features-cards {
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
 }
 
@@ -273,7 +272,7 @@ nav .nav-link:hover {
     align-items: center;
     gap: 1rem;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     color: var(--light-grey);
 }
 
@@ -338,4 +337,113 @@ nav .nav-link:hover {
 
 #card6 i {
     color: rgb(42, 42, 78);
+}
+
+
+/* testimonials */
+.testimonials {
+    background-color: white;
+}
+
+.testimonials-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testimonials-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonials-card {
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border: 2px solid var(--grey);
+    border-radius: .5rem;
+    box-shadow: 3px 3px 5px #ddd;
+}
+
+.testimonials-card .testimonials-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonials-card .testimonials-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: .8rem
+}
+
+.testimonials-card .testimonials-profile .profile-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* newsletter */
+.newsletter-container {
+    background-color: var(--grey);
+    max-width: 1280px;
+    margin: 2rem auto;
+}
+
+.newsletter-container .newsletter-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-content .news-left-img {
+    width: 50%;
+}
+
+.news-right {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: .5rem;
+}
+
+.news-right .news-head {
+    font-size: 2rem;
+}
+
+.news-right .email-input {
+    padding: .5rem;
+    border: none;
+    margin-block: 1rem;
+    border-radius: .2rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    width: 20rem;
+    border: solid var(--link-color) 2px;
+}
+
+.news-right .send-btn {
+    width: 100px;
+    padding: .5rem;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: solid var(--link-color) 2px;
+    border-radius: .2rem;
+    outline: none;
+    cursor: pointer;
 }
