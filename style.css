@@ -474,29 +474,29 @@ nav .nav-link:hover {
     font-size: 1.5rem;
 }
 
-.footer-contact #brand-book-icon{
+.footer-contact #brand-book-icon {
     color: var(--text-color);
     margin-right: .05rem;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.footer-links .links{
+.footer-links .links {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-.footer-links .links a{
+.footer-links .links a {
     color: var(--text-color);
     font-weight: 500;
 }
 
-.footer-links .links a:hover{
+.footer-links .links a:hover {
     color: var(--link-color);
 }
